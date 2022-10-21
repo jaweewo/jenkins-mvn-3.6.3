@@ -1,4 +1,4 @@
-FROM jenkins/jenkins:2.346.3-2-jdk8
+FROM jenkins/jenkins:lts-jdk11
 USER root
 RUN apt update && apt install -y maven ca-certificates curl gnupg lsb-release && mkdir -p /etc/apt/keyrings
 RUN curl -fsSL https://download.docker.com/linux/debian/gpg | gpg --dearmor -o /usr/share/keyrings/docker-archive-keyring.gpg
